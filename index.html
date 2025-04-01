@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Danh sách Sản phẩm</h1>
+    <ul id="productList"></ul>
+
+    <h2>Thêm / Sửa Sản phẩm</h2>
+    <input type="hidden" id="productId"> <!-- Ẩn ID khi sửa -->
+    <input type="text" id="name" placeholder="Tên sản phẩm">
+    <input type="number" id="price" placeholder="Giá">
+    <button id="addButton" onclick="addProduct()">Thêm</button>
+    <button id="updateButton" onclick="updateProduct()" style="display:none;">Cập nhật</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
